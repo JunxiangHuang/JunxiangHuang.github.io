@@ -1,0 +1,130 @@
+schema: hugoblox/author/v1
+slug: me
+is_owner: true
+name:
+  display: Junxiang Huang
+  given: Junxiang
+  family: Huang
+  alternate: 黄俊翔
+postnomials: []
+status:
+  icon: ""
+role: PhD Candidate in Quantum Information and Quantum Computing
+avatar: profile.jpg
+bio: |
+  I am a PhD candidate at Peking University, advised by Xiao Yuan, working on quantum algorithms, quantum information, and fault-tolerant quantum computing. My research focuses on resource-efficient methods for estimating quantum observables and nonlinear state properties, tensor-network-assisted quantum algorithms, and quantum error correction. I expect to graduate in June 2027 and am interested in postdoctoral opportunities.
+
+affiliations:
+  - name: Peking University
+    url: https://www.pku.edu.cn/
+
+links:
+  - icon: at-symbol
+    url: mailto:jxhuang@stu.pku.edu.cn
+    label: E-mail Me
+  - icon: brands/github
+    url: https://github.com/JunxiangHuang
+    label: GitHub
+  - icon: brands/linkedin
+    url: https://www.linkedin.com/in/junxiang-huang-61b2932b4/
+    label: LinkedIn
+  - icon: academicons/google-scholar
+    url: https://scholar.google.com/citations?user=jwlDn6kAAAAJ
+    label: Google Scholar
+
+interests:
+  - Quantum Algorithms
+  - Quantum Information Theory
+  - Quantum Simulation
+  - Fault-Tolerant Quantum Computing
+  - Quantum Error Correction
+
+education:
+  - degree: PhD in Computer Software and Theory
+    institution: Peking University
+    start: 2022-09-01
+    end: 2027-06-30
+    summary: Advised by Xiao Yuan. Research in quantum algorithms, quantum information, and fault-tolerant quantum computing.
+  - degree: B.S. in Physics and B.S. in Computer Science
+    institution: Peking University
+    start: 2018-09-01
+    end: 2022-07-31
+
+experience:
+  - role: Doctoral Researcher
+    org: Peking University
+    start: 2022-09-01
+    summary: |
+      Conducting research in Xiao Yuan's group at the Center on Frontiers of Computing Studies. Research spans local and global observable estimation, partial-transpose moments, clustered quantum systems, tensor-network-assisted algorithms, and fault-tolerant resource estimation. I have participated in group research since April 2021.
+  - role: Research Intern — Quantum Error Correction
+    org: Yuanjie Exploration (原界探索)
+    start: 2026-09-01
+    summary: Participating in quantum error correction research and product development.
+  - role: Visiting Research Student
+    org: Imperial College London
+    start: 2023-07-01
+    end: 2023-08-31
+    summary: Studied applications of perturbative quantum simulation to quantum information and many-body dynamics in the Quantum Information Theory Group.
+
+skills:
+  - name: Research Areas
+    items:
+      - label: Quantum Algorithms
+        level: 5
+      - label: Quantum Information Theory
+        level: 5
+      - label: Quantum Simulation
+        level: 5
+      - label: Quantum Computing
+        level: 5
+      - label: Fault-Tolerant Quantum Computing
+        level: 5
+      - label: Quantum Error Correction
+        level: 5
+  - name: Methods and Tools
+    items:
+      - label: Quantum Error Mitigation
+        level: 4
+      - label: Tensor Networks
+        level: 4
+      - label: Variational Quantum Algorithms
+        level: 4
+      - label: Python
+        level: 5
+      - label: C++
+        level: 3
+
+languages:
+  - name: Chinese
+    level: 5
+    label: Native
+  - name: English
+    level: 4
+    label: Fluent
+
+awards:
+  - title: Special Prize, Challenge Cup National College Students' Extracurricular Academic S&T Works Competition
+    awarder: China Youth Science and Technology Innovation Challenge
+    date: "2025-10-01"
+    summary: Team award; participated as the team representative.
+    icon: hero/trophy
+  - title: Best Student Poster Award — 3rd Place
+    awarder: AQIS 2023
+    date: "2023-09-01"
+    summary: For work on a tensor-network-assisted variational quantum algorithm.
+    icon: hero/trophy
+  - title: Award for Scientific Research
+    awarder: Peking University
+    date: "2025-12-01"
+    summary: 2019–2020 and 2024–2025 academic years.
+    icon: hero/trophy
+  - title: Award for Academic Excellence
+    awarder: Peking University
+    date: "2019-12-01"
+    summary: 2018–2019 academic year.
+    icon: hero/trophy
+  - title: Gold Medal and National Training Team Selection, 34th Chinese Physics Olympiad
+    awarder: Chinese Physics Olympiad
+    date: "2017-11-01"
+    summary: First prize in the national final round.
+    icon: hero/trophy
