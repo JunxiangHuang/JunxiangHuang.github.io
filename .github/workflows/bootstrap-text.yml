@@ -13,7 +13,7 @@ jobs:
           set -euo pipefail
           tmpdir=$(mktemp -d)
           git clone --depth 1 https://github.com/HugoBlox/hugo-theme-academic-cv.git "$tmpdir/theme"
-          rsync -a --exclude=.git "$tmpdir/theme/" ./
+          rsync -a --exclude=.git --exclude=.github "$tmpdir/theme/" ./
           mkdir -p "$(dirname README.md)"
           printf '%s' 'IyBKdW54aWFuZyBIdWFuZyDigJQgQWNhZGVtaWMgV2Vic2l0ZQoKVGhpcyBpcyBhbiBFbmdsaXNoLWZpcnN0IGFjYWRlbWljIHdlYnNpdGUgYnVpbHQgd2l0aCBbSHVnb0Jsb3ggQWNhZGVtaWMgQ1ZdKGh0dHBzOi8vZ2l0aHViLmNvbS9IdWdvQmxveC9odWdvLXRoZW1lLWFjYWRlbWljLWN2KSBhbmQgZGVwbG95ZWQgd2l0aCBHaXRIdWIgUGFnZXMuCgojIyBMb2NhbCBwcmV2aWV3CgpJbnN0YWxsIEh1Z28gRXh0ZW5kZWQgMC4xNjIuMCwgdGhlbiBydW46CgpgYGBiYXNoCmh1Z28gc2VydmVyCmBgYAoKIyMgUHVibGlzaAoKQ3JlYXRlIGEgcHVibGljIHJlcG9zaXRvcnkgbmFtZWQgYEp1bnhpYW5nSHVhbmcuZ2l0aHViLmlvYCwgcHVzaCB0aGlzIGRpcmVjdG9yeSB0byBpdHMgYG1haW5gIGJyYW5jaCwgYW5kIGVuYWJsZSBHaXRIdWIgUGFnZXMgd2l0aCAqKkdpdEh1YiBBY3Rpb25zKiogYXMgdGhlIHNvdXJjZS4gVGhlIGluY2x1ZGVkIHdvcmtmbG93IGJ1aWxkcyBIdWdvIEV4dGVuZGVkIDAuMTYyLjAgYW5kIGRlcGxveXMgdGhlIGdlbmVyYXRlZCBzaXRlIGF1dG9tYXRpY2FsbHkuCgpUaGUgc2l0ZSBpcyBjb25maWd1cmVkIGZvciBgaHR0cHM6Ly9qdW54aWFuZ2h1YW5nLmdpdGh1Yi5pby9gLgo=' | base64 -d > 'README.md'
           mkdir -p "$(dirname config/_default/hugo.yaml)"
@@ -44,7 +44,6 @@ jobs:
           rm -f 'content/publications/journal-article/cite.bib'
           rm -f 'content/publications/journal-article/index.md'
           rm -f 'content/publications/preprint/index.md'
-          rm -f '.github/workflows/bootstrap-text.yml'
       - name: Commit imported site
         shell: bash
         run: |
