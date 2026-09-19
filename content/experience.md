@@ -43,8 +43,7 @@ Studied applications of perturbative quantum simulation to quantum information a
 
 - **Teaching Assistant, Quantum Information**, Peking University (Spring 2023).
 - **Teaching Assistant, Probability and Statistics (A)**, Peking University (Spring 2022).
-- **Undergraduate Cohort Counselor**, EECS Class 10, Cohort of 2022, Peking University (September 2022–present).
-- **Teaching Assistant Scholarship**, Peking University (September 2022–present).
+- **Undergraduate Cohort Counselor**, EECS Class 10, Cohort of 2022, Peking University (September 2022–July 2026).
 
 ## Talks
 
