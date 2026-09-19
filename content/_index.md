@@ -42,6 +42,8 @@ See the complete [publication list](/publications/).
 - [Download CV](/uploads/resume.pdf)
 - [Experience, awards, teaching, and service](/experience/)
 - [Google Scholar](https://scholar.google.com/citations?user=jwlDn6kAAAAJ)
+- [GitHub](https://github.com/JunxiangHuang)
 - [LinkedIn](https://www.linkedin.com/in/junxiang-huang-61b2932b4/)
+- [Email](mailto:jxhuang@stu.pku.edu.cn)
 
 I welcome conversations about quantum algorithms, quantum information, quantum error correction, and postdoctoral opportunities.
