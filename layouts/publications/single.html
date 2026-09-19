@@ -1,0 +1,6 @@
+{{ define "main" }}
+<main id="main-content" class="academic-page paper-detail">
+<p class="back-link"><a href="{{ "/publications/" | relURL }}">← All publications</a></p>
+{{ partial "paper.html" (dict "page" . "detail" true "highlight" true) }}
+{{ with .Content }}<div>{{ . }}</div>{{ end }}
+</main>{{ end }}

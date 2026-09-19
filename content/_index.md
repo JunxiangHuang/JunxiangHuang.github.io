@@ -1,49 +1,18 @@
 ---
 title: Junxiang Huang
-summary: Academic website of Junxiang Huang
-date: 2026-09-19
+summary: Quantum algorithms and quantum information research at Peking University.
 type: landing
 ---
-
-## About
-
-I am a PhD candidate at Peking University, advised by [Xiao Yuan](https://cfcs.pku.edu.cn/english/), working on quantum algorithms, quantum information, and fault-tolerant quantum computing. I expect to graduate in June 2027 and am interested in postdoctoral opportunities.
-
-My research develops resource-efficient methods for quantum simulation and information extraction, including protocols for estimating local observables and nonlinear quantum-state properties, tensor-network-assisted quantum algorithms, and quantum error correction.
-
 ## Research {#research}
 
 ### Local and global observable estimation
-
-I study measurement- and sample-efficient protocols for estimating observables in structured many-body states, including local observables and cluster-level light-cone decompositions.
+I study how the structure of quantum many-body systems can reduce measurement and sampling costs. Our [cluster-level light-cone method](/publications/local-observables/) targets the estimation of local observables.
 
 ### Partial-transpose moments and quantum entanglement
-
-I develop methods for estimating partial-transpose moments with low memory overhead, providing tools for characterizing nonlinear properties of quantum states and entanglement.
+My work on [partial-transpose moments](/publications/partial-transpose-moments/) studies nonlinear state properties under limited active quantum memory. A related collaboration develops [generalized Mermin inequalities](/publications/mermin-inequalities/) for benchmarking multipartite entanglement and nonlocality.
 
 ### Cluster states and tensor-network-assisted algorithms
+I work on [tensor-network-assisted variational algorithms](/publications/tensor-network-vqa/) and have contributed to a collaboration on [cluster states for topological simulation and measurement-based computation](/publications/cluster-states/).
 
-I investigate clustered quantum systems and tensor-network-assisted variational algorithms for quantum simulation and measurement-based quantum computation.
-
-### Fault-tolerant quantum computing and QEC
-
-I work on resource estimation and algorithm-to-execution workflows for early fault-tolerant quantum computing, with current work including quantum error correction research and product development.
-
-## Selected Publications
-
-See the complete [publication list](/publications/).
-
-- **Estimating Local Observables via Cluster-Level Light-Cone Decomposition**, *Physical Review A* 113, 032414 (2026).
-- **Simultaneous Estimation of Partial-Transpose Moments with Active Memory Independent of the Moment Order**, arXiv:2606.14204 (2026).
-- **One- and two-dimensional cluster states for topological phase simulation and measurement-based quantum computation**, *Nature Physics* 22, 430–438 (2026).
-
-## Academic Information
-
-- [Download CV](/uploads/resume.pdf)
-- [Experience, awards, teaching, and service](/experience/)
-- [Google Scholar](https://scholar.google.com/citations?user=jwlDn6kAAAAJ)
-- [GitHub](https://github.com/JunxiangHuang)
-- [LinkedIn](https://www.linkedin.com/in/junxiang-huang-61b2932b4/)
-- [Email](mailto:jxhuang@stu.pku.edu.cn)
-
-I welcome conversations about quantum algorithms, quantum information, quantum error correction, and postdoctoral opportunities.
+### Fault-tolerant quantum computing and quantum error correction
+My recent collaborations connect logical algorithms to physical resource requirements, including an [algorithm-to-execution framework for surface codes](/publications/surface-code-framework/) and [fault-tolerant dynamics simulation](/publications/quantum-classical-crossover/).

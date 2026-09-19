@@ -1,0 +1,7 @@
+<a class="skip-link" href="#main-content">Skip to content</a>
+<header class="academic-nav">
+  <a class="site-name" href="{{ "/" | relURL }}">Junxiang Huang</a>
+  <nav aria-label="Main navigation">
+    {{ range site.Menus.main }}<a href="{{ .URL | relURL }}">{{ .Name }}</a>{{ end }}
+  </nav>
+</header>

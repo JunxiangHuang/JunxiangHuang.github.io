@@ -1,0 +1,9 @@
+{{ define "main" }}
+<main id="main-content" class="academic-page">
+<h1>Publications</h1>
+<p class="section-links"><a href="#published">Published papers</a> · <a href="#preprints">Preprints</a> · <a href="https://scholar.google.com/citations?user=jwlDn6kAAAAJ">Google Scholar</a></p>
+{{ range slice (dict "status" "published" "id" "published" "title" "Published Papers") (dict "status" "preprint" "id" "preprints" "title" "Preprints") }}
+<section aria-labelledby="{{ .id }}"><h2 id="{{ .id }}">{{ .title }}</h2>
+{{ range (where $.RegularPages "Params.status" .status).ByDate.Reverse }}{{ partial "paper.html" (dict "page" . "detail" false "highlight" false) }}{{ end }}
+</section>{{ end }}
+</main>{{ end }}

@@ -1,28 +1,20 @@
-{{ if eq .RelPermalink "/" }}
-  {{ $avatar := resources.Get "media/profile.jpg" }}
-  <main class="mx-auto max-w-5xl px-6 py-16">
-    <section class="mb-14 grid items-center gap-10 md:grid-cols-[1fr_auto]">
-      <div>
-        <p class="mb-3 text-lg font-medium text-primary-600 dark:text-primary-400">Peking University PhD Candidate</p>
-        <h1 class="mb-5 text-5xl font-bold tracking-tight md:text-6xl">Junxiang Huang</h1>
-        <p class="mb-6 max-w-3xl text-xl leading-relaxed text-gray-600 dark:text-gray-300">Quantum algorithms · Quantum information · Fault-tolerant quantum computing · Quantum error correction</p>
-        <p class="mb-7 text-lg text-gray-600 dark:text-gray-300">Expected graduation: June 2027 · Seeking 2027 postdoctoral opportunities</p>
-        <div class="flex flex-wrap gap-3">
-          <a class="rounded-lg bg-primary-600 px-5 py-3 font-medium text-white hover:bg-primary-700" href="/uploads/resume.pdf">Download CV</a>
-          <a class="rounded-lg border border-gray-300 px-5 py-3 font-medium hover:bg-gray-100 dark:border-gray-600 dark:hover:bg-gray-800" href="mailto:jxhuang@stu.pku.edu.cn">Email</a>
-        </div>
-      </div>
-      {{ with $avatar }}
-        <img class="mx-auto h-56 w-56 rounded-full object-cover shadow-lg" src="{{ .RelPermalink }}" alt="Portrait of Junxiang Huang" width="224" height="224">
-      {{ end }}
-    </section>
-    <article class="prose prose-slate max-w-none dark:prose-invert lg:prose-lg">{{ .Content }}</article>
-  </main>
-{{ else }}
-  {{ $sections := partial "hbx/sections.html" . }}
-  {{ range $block := $sections }}
-    {{ if or (not $block.demo) ($block.demo | and (eq (os.Getenv "HUGO_BLOX_DEMO") "true")) }}
-      {{ partial "functions/parse_block_v3" (dict "page" $ "block" $block) }}
-    {{ end }}
+<main id="main-content" class="academic-page">
+{{ if .IsHome }}
+  <section class="profile-intro">
+    <div><h1>Junxiang Huang</h1><p class="role">PhD Candidate · Peking University</p>
+    <p>I work on quantum algorithms and quantum information, advised by <a href="http://qtheorist.site/members/xiao-yuan/">Xiao Yuan</a>. My research focuses on learning properties of quantum systems with limited resources, and on connecting quantum algorithms to fault-tolerant execution.</p>
+    <p>I expect to graduate in June 2027 and am seeking postdoctoral opportunities starting in 2027.</p>
+    <p class="contact-links"><a href="/uploads/resume.pdf">CV</a><a href="https://scholar.google.com/citations?user=jwlDn6kAAAAJ">Google Scholar</a><a href="https://github.com/JunxiangHuang">GitHub</a><a href="mailto:jxhuang@stu.pku.edu.cn">Email</a></p></div>
+    {{ with resources.Get "media/profile.jpg" }}<img src="{{ .RelPermalink }}" alt="Junxiang Huang" width="150" height="190">{{ end }}
+  </section>
+  {{ .Content }}
+  <section aria-labelledby="selected-publications"><h2 id="selected-publications">Selected Publications</h2>
+  {{ range slice "local-observables" "partial-transpose-moments" "cluster-states" }}
+    {{ with site.GetPage (printf "/publications/%s" .) }}{{ partial "paper.html" (dict "page" . "detail" false "highlight" true) }}{{ end }}
   {{ end }}
+  <p><a href="/publications/">All publications →</a></p></section>
+  <section aria-labelledby="contact"><h2 id="contact">Contact</h2><p><a href="mailto:jxhuang@stu.pku.edu.cn">jxhuang@stu.pku.edu.cn</a><br>Center on Frontiers of Computing Studies, Peking University<br>Beijing, China</p><p><a href="https://www.linkedin.com/in/junxiang-huang-61b2932b4/">LinkedIn</a> · <a href="/experience/">Education, experience, and academic service</a></p></section>
+{{ else }}
+  <h1>{{ .Title }}</h1>{{ .Content }}
 {{ end }}
+</main>

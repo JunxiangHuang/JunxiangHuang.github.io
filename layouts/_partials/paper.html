@@ -1,0 +1,8 @@
+<article class="paper">
+  {{ if .detail }}<h1>{{ .page.Title }}</h1>{{ else }}<h3><a href="{{ .page.RelPermalink }}">{{ .page.Title }}</a></h3>{{ end }}
+  <p class="authors">{{ partial "page_metadata_authors.html" .page }}</p>
+  <p class="venue">{{ .page.Params.publication_short }}</p>
+  {{ with .page.Params.equal_contributors }}<p class="author-note">* Equal contribution.</p>{{ end }}
+  <p class="paper-links">{{ range .page.Params.links }}<a href="{{ .url }}">{{ if eq .type "doi" }}DOI{{ else if eq .type "preprint" }}arXiv{{ else }}{{ .type | title }}{{ end }}</a>{{ end }}</p>
+  {{ if .highlight }}<p class="highlight">{{ .page.Params.summary }}</p>{{ end }}
+</article>

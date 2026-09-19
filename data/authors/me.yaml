@@ -12,7 +12,7 @@ status:
 role: PhD Candidate in Quantum Information and Quantum Computing
 avatar: profile.jpg
 bio: |
-  I am a PhD candidate at Peking University, advised by Xiao Yuan, working on quantum algorithms, quantum information, and fault-tolerant quantum computing. My research focuses on resource-efficient methods for estimating quantum observables and nonlinear state properties, tensor-network-assisted quantum algorithms, and quantum error correction. I expect to graduate in June 2027 and am interested in postdoctoral opportunities.
+  I am a PhD candidate at Peking University, advised by [Xiao Yuan](http://qtheorist.site/members/xiao-yuan/), working on quantum algorithms, quantum information, and fault-tolerant quantum computing. My research focuses on resource-efficient methods for estimating quantum observables and nonlinear state properties, tensor-network-assisted quantum algorithms, and quantum error correction. I expect to graduate in June 2027 and am interested in postdoctoral opportunities.
 
 affiliations:
   - name: Peking University
@@ -44,7 +44,7 @@ education:
     institution: Peking University
     start: 2022-09-01
     end: 2027-06-30
-    summary: Advised by Xiao Yuan. Research in quantum algorithms, quantum information, and fault-tolerant quantum computing.
+    summary: Advised by [Xiao Yuan](http://qtheorist.site/members/xiao-yuan/). Research in quantum algorithms, quantum information, and fault-tolerant quantum computing.
   - degree: B.S. in Physics and B.S. in Computer Science
     institution: Peking University
     start: 2018-09-01
@@ -55,7 +55,7 @@ experience:
     org: Peking University
     start: 2022-09-01
     summary: |
-      Conducting research in Xiao Yuan's group at the Center on Frontiers of Computing Studies. Research spans local and global observable estimation, partial-transpose moments, clustered quantum systems, tensor-network-assisted algorithms, and fault-tolerant resource estimation. I have participated in group research since April 2021.
+      Conducting research in [Xiao Yuan’s group](http://qtheorist.site/members/xiao-yuan/) at the Center on Frontiers of Computing Studies. Research spans local and global observable estimation, partial-transpose moments, clustered quantum systems, tensor-network-assisted algorithms, and fault-tolerant resource estimation. I have participated in group research since April 2021.
   - role: Research Intern — Quantum Error Correction
     org: Yuanjie Exploration (原界探索)
     start: 2026-09-01

@@ -1,0 +1,6 @@
+{{- $page := . -}}
+{{- range $i, $author := .Params.authors -}}
+  {{- if $i }}, {{ end -}}
+  {{- if eq $author "me" -}}<strong>Junxiang Huang</strong>{{- else -}}{{ $author }}{{- end -}}
+  {{- if in ($page.Params.equal_contributors | default slice) $author -}}<sup>*</sup>{{- end -}}
+{{- end -}}
