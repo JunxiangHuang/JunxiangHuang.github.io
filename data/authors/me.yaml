@@ -31,6 +31,9 @@ links:
   - icon: academicons/google-scholar
     url: https://scholar.google.com/citations?user=jwlDn6kAAAAJ
     label: Google Scholar
+  - icon: academicons/orcid
+    url: https://orcid.org/0009-0004-1225-585X
+    label: ORCID
 
 interests:
   - Quantum Algorithms
