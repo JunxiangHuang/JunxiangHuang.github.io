@@ -47,5 +47,9 @@ for name, page in pages.items():
     assert 'Presidential Scholarship' not in text and '校长奖学金' not in text
     assert '/authors/et-al/' not in text
 assert {'education','experience','awards','teaching','talks','service'} <= pages['experience/index.html'].ids
-assert (root / 'uploads/resume.pdf').read_bytes() == Path('static/uploads/resume.pdf').read_bytes()
-print(f'PASS: {len(listing.papers)} papers, author highlighting, internal links/anchors, experience sections, unchanged CV.')
+# Deployment integrity only: byte equality does not validate CV metadata.
+assert (root / 'uploads/resume.pdf').read_bytes() == Path('static/uploads/resume.pdf').read_bytes(), 'CV deployment bytes differ'
+assert '/cv/' in pages['index.html'].links, 'Homepage must expose CV updates before the snapshot'
+assert '/uploads/resume.pdf' in pages['cv/index.html'].links, 'Missing CV snapshot download'
+assert {'/experience/', '/publications/'} <= set(pages['cv/index.html'].links)
+print(f'PASS: {len(listing.papers)} papers, author highlighting, internal links/anchors, experience sections, CV snapshot deployment integrity (metadata not checked).')

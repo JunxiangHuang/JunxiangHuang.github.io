@@ -17,5 +17,5 @@ main:
     url: /experience/
     weight: 13
   - name: CV
-    url: /uploads/resume.pdf
+    url: /cv/
     weight: 30
