@@ -27,7 +27,7 @@ class Page(HTMLParser):
 root = Path(sys.argv[1])
 pages = {p.relative_to(root).as_posix(): Page(p) for p in root.rglob('*.html')}
 listing = pages['publications/index.html']
-assert len(listing.papers) >= 9, 'Missing publications'
+assert len(listing.papers) >= 10, 'Missing publications'
 assert {'published', 'preprints'} <= listing.ids
 assert len(pages['index.html'].papers) == 3
 for name, page in pages.items():
@@ -48,4 +48,4 @@ for name, page in pages.items():
     assert '/authors/et-al/' not in text
 assert {'education','experience','awards','teaching','talks','service'} <= pages['experience/index.html'].ids
 assert (root / 'uploads/resume.pdf').read_bytes() == Path('static/uploads/resume.pdf').read_bytes()
-print(f'PASS: {len(listing.papers)} papers, author highlighting, internal links/anchors, experience sections, unchanged CV.')
+print(f'PASS: {len(listing.papers)} papers, author highlighting, internal links/anchors, experience sections, CV download matches source.')

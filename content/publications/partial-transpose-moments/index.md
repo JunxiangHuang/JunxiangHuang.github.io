@@ -1,6 +1,5 @@
 ---
-title: Simultaneous Estimation of Partial-Transpose Moments with Active Memory Independent
-  of the Moment Order
+title: Streaming the partial-transpose moment hierarchy with order-independent quantum memory
 authors:
 - me
 - Xiaoyang Wang
