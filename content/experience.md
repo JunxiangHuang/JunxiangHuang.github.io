@@ -47,7 +47,7 @@ Studied applications of perturbative quantum simulation to quantum information a
 
 ## Talks
 
-- **Resource-Efficient Quantum Property Estimation: Partial-Transpose Moments and Quantum Fisher Information** — The University of Tokyo (October 2026; scheduled).
+- **Resource-Efficient Quantum Property Estimation: Partial-Transpose Moments and Quantum Fisher Information** — The University of Tokyo (October 2026).
 - **Estimating Local Observables via Cluster-Level Light-Cone Decomposition** — Nanjing University, online (December 2025).
 - **Efficient Estimation of Global and Local Observables in Clustered Quantum Systems** — invited talk, Shenzhen International Quantum Academy (July 2025).
 
