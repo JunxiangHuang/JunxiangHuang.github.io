@@ -2,9 +2,9 @@
 {{ if .IsHome }}
   <section class="profile-intro">
     <div><h1>Junxiang Huang</h1><p class="role">PhD Candidate · Peking University</p>
-    <p>I work on quantum algorithms and quantum information, advised by <a href="http://qtheorist.site/members/xiao-yuan/">Xiao Yuan</a>. My research focuses on learning properties of quantum systems with limited resources, and on connecting quantum algorithms to fault-tolerant execution.</p>
+    <p>I work on quantum algorithms and quantum information, advised by <a href="http://qtheorist.site/members/xiao-yuan/">Xiao Yuan</a>. My research focuses on resource-efficient quantum algorithms for many-body simulation and quantum-state property estimation, with particular interest in the early fault-tolerant regime.</p>
     <p>I expect to graduate in June 2027 and am seeking postdoctoral opportunities starting in 2027.</p>
-    <p class="contact-links"><a href="/cv/">CV</a><a href="https://scholar.google.com/citations?user=jwlDn6kAAAAJ">Google Scholar</a><a href="https://orcid.org/0009-0004-1225-585X">ORCID</a><a href="https://github.com/JunxiangHuang">GitHub</a><a href="mailto:jxhuang@stu.pku.edu.cn">Email</a></p></div>
+    <p class="contact-links"><a href="/uploads/resume.pdf">CV</a><a href="https://scholar.google.com/citations?user=jwlDn6kAAAAJ">Google Scholar</a><a href="https://orcid.org/0009-0004-1225-585X">ORCID</a><a href="https://github.com/JunxiangHuang">GitHub</a><a href="mailto:jxhuang@stu.pku.edu.cn">Email</a></p></div>
     {{ with resources.Get "media/profile.jpg" }}<img src="{{ .RelPermalink }}" alt="Junxiang Huang" width="150" height="190">{{ end }}
   </section>
   {{ .Content }}

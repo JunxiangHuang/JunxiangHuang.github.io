@@ -26,15 +26,10 @@ Homepage selections use those same publication records; keep existing URLs stabl
 Experience, teaching, awards, talks and service are in `content/experience.md`.
 
 After building, run `python3 scripts/check_site.py public` to check internal links,
-author highlighting, required sections, the CV update-page links, and CV download
-**deployment integrity**. The PDF byte comparison only verifies that Hugo copied
-the repository asset correctly; it does not verify agreement with current metadata.
-
-The CV entry points lead to `content/cv.md`, which records confirmed updates to the
-19 September PDF snapshot and links to the unchanged download. No editable CV
-source is tracked. Preserve the original PDF layout until its source is available;
-keep the update page in sync when confirmed website metadata changes. See
-[the CV audit](docs/cv-audit.md) for the checked fields and limits.
+author highlighting, required sections, and CV download deployment integrity.
+The PDF byte comparison verifies that Hugo copied the repository asset correctly;
+it does not check semantic agreement with publication or profile metadata.
+Review the PDF separately whenever those records change.
 
 Metadata checked on 19 September 2026 against the CV, Google Scholar and primary
 sources: arXiv 2609.10965, 2607.23574, 2607.16116, 2606.14204, 2604.07909,

@@ -27,7 +27,7 @@ class Page(HTMLParser):
 root = Path(sys.argv[1])
 pages = {p.relative_to(root).as_posix(): Page(p) for p in root.rglob('*.html')}
 listing = pages['publications/index.html']
-assert len(listing.papers) >= 9, 'Missing publications'
+assert len(listing.papers) >= 10, 'Missing publications'
 assert {'published', 'preprints'} <= listing.ids
 assert len(pages['index.html'].papers) == 3
 for name, page in pages.items():
@@ -49,7 +49,4 @@ for name, page in pages.items():
 assert {'education','experience','awards','teaching','talks','service'} <= pages['experience/index.html'].ids
 # Deployment integrity only: byte equality does not validate CV metadata.
 assert (root / 'uploads/resume.pdf').read_bytes() == Path('static/uploads/resume.pdf').read_bytes(), 'CV deployment bytes differ'
-assert '/cv/' in pages['index.html'].links, 'Homepage must expose CV updates before the snapshot'
-assert '/uploads/resume.pdf' in pages['cv/index.html'].links, 'Missing CV snapshot download'
-assert {'/experience/', '/publications/'} <= set(pages['cv/index.html'].links)
-print(f'PASS: {len(listing.papers)} papers, author highlighting, internal links/anchors, experience sections, CV snapshot deployment integrity (metadata not checked).')
+print(f'PASS: {len(listing.papers)} papers, author highlighting, internal links/anchors, experience sections, CV deployment integrity (metadata not checked).')
