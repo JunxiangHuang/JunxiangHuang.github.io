@@ -108,10 +108,10 @@ languages:
 awards:
   - title: Special Prize, Challenge Cup National College Students' Extracurricular Academic S&T Works Competition
     awarder: China Youth Science and Technology Innovation Challenge
-    date: "2025-10-01"
+    date: "2025-11-01" # Certificate gives month only; day is a schema placeholder.
     summary: Team award; participated as the team representative.
     icon: hero/trophy
-  - title: Best Student Poster Award — 3rd Place
+  - title: 3rd Place Award, Student Poster Presentation
     awarder: AQIS 2023
     date: "2023-09-01"
     summary: For work on a tensor-network-assisted variational quantum algorithm.

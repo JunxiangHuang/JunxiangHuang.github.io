@@ -33,9 +33,9 @@ Studied applications of perturbative quantum simulation to quantum information a
 
 ## Awards
 
-- **Special Prize, 19th Challenge Cup — China Youth Science and Technology Innovation Challenge Track** (October 2025). Team award for “Characterizing Pauli-Channel Behavior and Error Mitigation in Quantum Circuits”; participated as the team representative.
+- **Special Prize, 19th Challenge Cup — China Youth Science and Technology Innovation Challenge Track** (November 2025). Team award for “Characterizing Pauli-Channel Behavior and Error Mitigation in Quantum Circuits”; participated as the team representative.
 - **Award for Scientific Research, Peking University** (2019–2020 and 2024–2025 academic years).
-- **Best Student Poster Award — 3rd Place, AQIS 2023** (September 2023). For work on a tensor-network-assisted variational quantum algorithm.
+- **3rd Place Award, Student Poster Presentation, AQIS 2023** (September 2023). For work on a tensor-network-assisted variational quantum algorithm.
 - **Award for Academic Excellence, Peking University** (2018–2019 academic year).
 - **Gold Medal (First Prize) and National Training Team Selection, 34th Chinese Physics Olympiad** (November 2017). National final round in China.
 
@@ -73,7 +73,7 @@ Participant in two Beijing Natural Science Foundation projects:
 - **Simultaneous Estimation of Partial-Transpose Moments with Active Memory Independent of the Moment Order** — AQIS 2026, Daejeon (August 2026; title at presentation).
 - **Efficient Estimation of Global and Local Observables in Clustered Quantum Systems** — AQIS 2025, Hong Kong (August 2025).
 - **Error Mitigation via N-Representability Conditions** — TQC 2024, Okinawa, and SEEQA 2024, Oxford (September 2024).
-- **Tensor-Network-Assisted Variational Quantum Algorithm** — AQIS 2023, Seoul (September 2023).
+- **Tensor-Network-Assisted Variational Quantum Algorithm** — AQIS 2023, Seoul (August 2023).
 
 ## Methods and Languages
 

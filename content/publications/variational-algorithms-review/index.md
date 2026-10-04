@@ -13,14 +13,15 @@ authors:
 - Jianshuo Gao
 - Xiao Yuan
 - Yuan Yao
-date: '2026-04-09'
-status: preprint
+date: '2026-07-23'
+status: published
 publication_types:
-- manuscript
+- article-journal
 publication:
-  name: arXiv
-  pages: '2604.07909'
-publication_short: arXiv:2604.07909 (2026) — preprint
+  name: Frontiers of Physics
+  volume: 22
+  pages: '023301'
+publication_short: Frontiers of Physics 22, 023301 (2027); published online 23 July 2026
 summary: Reviews variational methods from noisy devices through early and fully fault-tolerant
   quantum computing.
 abstract: Reviews variational methods from noisy devices through early and fully fault-tolerant
@@ -31,6 +32,8 @@ equal_contributors:
 - me
 - Runyu Ye
 links:
+- type: doi
+  url: https://doi.org/10.15302/frontphys.2027.023301
 - type: preprint
   url: https://arxiv.org/abs/2604.07909
 ---
