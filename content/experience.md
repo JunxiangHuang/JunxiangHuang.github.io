@@ -53,7 +53,7 @@ Studied applications of perturbative quantum simulation to quantum information a
 
 ## Service
 
-Journal referee for *Physical Review Letters*, *Physical Review A*, *npj Quantum Information*, and *Quantum*. Conference referee for AQIS and TQC.
+Journal referee for *Physical Review Letters*, *Physical Review A*, *Physical Review B*, *npj Quantum Information*, and *Quantum*. Conference referee for AQIS and TQC.
 
 ## Selected Funded Projects {#projects}
 
