@@ -33,6 +33,8 @@ Studied applications of perturbative quantum simulation to quantum information a
 
 ## Awards
 
+- **National Scholarship for Doctoral Students** (2025–2026 academic year).
+- **Merit Student, Peking University** (2025–2026 academic year).
 - **Special Prize, 19th Challenge Cup — China Youth Science and Technology Innovation Challenge Track** (November 2025). Team award for “Characterizing Pauli-Channel Behavior and Error Mitigation in Quantum Circuits”; participated as the team representative.
 - **Award for Scientific Research, Peking University** (2019–2020 and 2024–2025 academic years).
 - **3rd Place Award, Student Poster Presentation, AQIS 2023** (September 2023). For work on a tensor-network-assisted variational quantum algorithm.
